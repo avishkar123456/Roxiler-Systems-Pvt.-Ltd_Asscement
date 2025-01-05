@@ -1,0 +1,1 @@
+enum role: { admin: 0, normal_user: 1, store_owner: 2 }
