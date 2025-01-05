@@ -1,0 +1,4 @@
+validates :name, length: { in: 20..60 }
+validates :address, length: { maximum: 400 }
+validates :password, format: { with: /(?=.*[A-Z])(?=.*[\W]).{8,16}/ }
+validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
